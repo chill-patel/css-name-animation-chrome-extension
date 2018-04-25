@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head></head>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Muli:300,400,700');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #000;
+        height: 200vh;
+        font-family: 'Muli', sans-serif;
+    }
+
+    .text {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        list-style: none;
+        border-bottom: 0;
+    }
+
+    .text.hidden {
+        border-bottom: 1px solid #fff;
+    }
+
+    .text li {
+        display: inline-block;
+        float: left;
+        font-weight: 700;
+        font-size: 5em;
+        color: #fff;
+        opacity: 1;
+        transition: all 1.5s ease-in-out;
+        max-width: 5em;
+    }
+
+    .text.hidden li.spaced {
+        padding-left: 0;
+    }
+
+    .text li.spaced {
+        padding-left: 0.5em;
+    }
+
+    .text.hidden li.ghost {
+        opacity: 0;
+        max-width: 0;
+    }
+</style>
+
+<body>
+
+    wassup
+
+    <ul class="text hidden">
+        <li>H</li>
+        <li class="ghost">e</li>
+        <li class="ghost">y</li>
+        <li class="spaced">A</li>
+        <li class="ghost">n</li>
+        <li class="ghost">j</li>
+        <li class="ghost">a</li>
+        <li class="ghost">l</li>
+        <li class="ghost">i</li>
+        <li class="spaced">W</li>
+        <li class="ghost">a</li>
+        <li class="ghost">s</li>
+        <li class="ghost">s</li>
+        <li class="ghost">u</li>
+        <li class="ghost">p</li>
+        <li class="ghost">!</li>
+    </ul>
+    <script src="./jquery.js"></script>
+    <script src="./event-script.js"></script>
+</body>
+</html>
